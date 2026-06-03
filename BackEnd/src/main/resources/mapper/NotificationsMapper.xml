@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.freefiction.mapper.NotificationsMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.freefiction.entity.Notifications">
+            <id property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="type" column="type" />
+            <result property="title" column="title" />
+            <result property="content" column="content" />
+            <result property="relatedId" column="related_id" />
+            <result property="relatedType" column="related_type" />
+            <result property="isRead" column="is_read" />
+            <result property="createdAt" column="created_at" />
+            <result property="updatedAt" column="updated_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,type,title,content,related_id,
+        related_type,is_read,created_at,updated_at
+    </sql>
+</mapper>

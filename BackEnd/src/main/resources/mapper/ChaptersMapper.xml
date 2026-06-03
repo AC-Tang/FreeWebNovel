@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.freefiction.mapper.ChaptersMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.freefiction.entity.Chapters">
+            <id property="id" column="id" />
+            <result property="bookId" column="book_id" />
+            <result property="title" column="title" />
+            <result property="content" column="content" />
+            <result property="wordCount" column="word_count" />
+            <result property="sortOrder" column="sort_order" />
+            <result property="viewCount" column="view_count" />
+            <result property="createdAt" column="created_at" />
+            <result property="updatedAt" column="updated_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,book_id,title,content,word_count,sort_order,
+        view_count,created_at,updated_at
+    </sql>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.freefiction.mapper.BookshelvesMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.freefiction.entity.Bookshelves">
+            <id property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="parentId" column="parent_id" />
+            <result property="name" column="name" />
+            <result property="bookId" column="book_id" />
+            <result property="description" column="description" />
+            <result property="lastReadChapterId" column="last_read_chapter_id" />
+            <result property="lastReadTime" column="last_read_time" />
+            <result property="sortOrder" column="sort_order" />
+            <result property="itemType" column="item_type" />
+            <result property="createdAt" column="created_at" />
+            <result property="updatedAt" column="updated_at" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,parent_id,name,book_id,description,
+        last_read_chapter_id,last_read_time,sort_order,item_type,created_at,
+        updated_at
+    </sql>
+</mapper>
